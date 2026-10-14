@@ -1,0 +1,120 @@
+.pedido {
+  width: 100%;
+}
+
+.cabecalho {
+  margin-bottom: 24px;
+}
+
+.etiqueta {
+  color: #23834f;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.cabecalho h2 {
+  margin: 8px 0;
+  color: #183b2b;
+  font-size: clamp(24px, 3vw, 34px);
+}
+
+.cabecalho p {
+  color: #68776d;
+  line-height: 1.6;
+}
+
+.vazio {
+  padding: 36px 20px;
+  border: 1px dashed #cbdccc;
+  border-radius: 18px;
+  background: #f8fbf7;
+  text-align: center;
+}
+
+.iconeVazio {
+  font-size: 38px;
+}
+
+.vazio h3 {
+  margin-bottom: 8px;
+  color: #213d2c;
+}
+
+.vazio p {
+  margin: 0;
+  color: #758078;
+  font-size: 14px;
+}
+
+.lista {
+  display: grid;
+  gap: 12px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #e2eae3;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.info h3 {
+  margin: 0 0 6px;
+  color: #213d2c;
+  font-size: 15px;
+}
+
+.info p {
+  margin: 0;
+  color: #758078;
+  font-size: 13px;
+}
+
+.remover {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 9px;
+  background: #fbecea;
+  color: #b33b30;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.subtotal {
+  color: #23834f;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.resumo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 14px;
+  background: #183b2b;
+  color: #fff;
+}
+
+.resumo strong {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+  .item {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .subtotal {
+    grid-column: 1 / -1;
+  }
+}

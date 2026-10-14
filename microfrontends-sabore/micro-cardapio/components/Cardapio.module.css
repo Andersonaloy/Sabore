@@ -1,0 +1,103 @@
+.cardapio {
+  width: 100%;
+}
+
+.cabecalho {
+  margin-bottom: 24px;
+}
+
+.etiqueta {
+  color: #23834f;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.cabecalho h2 {
+  margin: 8px 0;
+  color: #183b2b;
+  font-size: clamp(24px, 3vw, 34px);
+}
+
+.cabecalho p {
+  color: #68776d;
+  line-height: 1.6;
+}
+
+.lista {
+  display: grid;
+  gap: 14px;
+}
+
+.prato {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid #e2eae3;
+  border-radius: 18px;
+  background: #fff;
+}
+
+.icone {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  background: #eff6ed;
+  font-size: 30px;
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.info h3 {
+  margin: 0 0 6px;
+  color: #213d2c;
+  font-size: 16px;
+}
+
+.info p {
+  margin: 0 0 10px;
+  color: #758078;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.info strong {
+  color: #23834f;
+}
+
+.botao {
+  flex-shrink: 0;
+  padding: 11px 14px;
+  border: 0;
+  border-radius: 10px;
+  background: #237d4b;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: #185e37;
+}
+
+@media (max-width: 540px) {
+  .prato {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .info {
+    flex-basis: calc(100% - 80px);
+  }
+
+  .botao {
+    width: 100%;
+  }
+}

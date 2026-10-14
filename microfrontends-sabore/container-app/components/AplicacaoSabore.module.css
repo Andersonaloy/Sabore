@@ -1,0 +1,81 @@
+.pagina {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f6f8f4;
+  color: #20382a;
+}
+
+.cabecalho {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dce6dc;
+}
+
+.logo {
+  color: #183b2b;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #23834f;
+}
+
+.cabecalho p {
+  margin: 6px 0 0;
+  color: #68776d;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(300px, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.areaCardapio,
+.areaPedido {
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid #e2eae3;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgb(24 59 43 / 5%);
+}
+
+.carregando {
+  padding: 24px;
+  color: #68776d;
+  text-align: center;
+}
+
+.rodape {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid #dce6dc;
+  color: #758078;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .pagina {
+    padding: 20px 14px;
+  }
+
+  .conteudo {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .areaCardapio,
+  .areaPedido {
+    padding: 18px;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "micro-pedido",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NEXT_PRIVATE_LOCAL_WEBPACK=true next dev -p 3002",
+    "build": "cross-env NEXT_PRIVATE_LOCAL_WEBPACK=true next build",
+    "start": "cross-env NEXT_PRIVATE_LOCAL_WEBPACK=true next start -p 3002"
+  },
+  "dependencies": {
+    "@module-federation/nextjs-mf": "^8.8.76",
+    "cross-env": "^10.1.0",
+    "next": "14.2.30",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "enhanced-resolve": "^5.17.1",
+    "webpack": "^5.94.0"
+  }
+}

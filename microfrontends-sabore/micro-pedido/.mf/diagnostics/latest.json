@@ -1,0 +1,26 @@
+{
+  "bundler": {
+    "name": "webpack"
+  },
+  "mfConfig": {
+    "name": "pedido",
+    "exposes": {
+      "./Pedido": "./components/Pedido.js"
+    }
+  },
+  "latestErrorEvent": {
+    "code": "BUILD-001",
+    "message": "Failed to find expose module. #BUILD-001\nargs: {\"exposeModules\":[{\"name\":\"./Pedido\",\"module\":null,\"request\":\"./components/Pedido.js\"}],\"FEDERATION_WEBPACK_PATH\":\"C:\\\\Users\\\\User\\\\Documents\\\\Curso Ebac\\\\Projetos\\\\Sabore\\\\microfrontends-sabore\\\\micro-pedido\\\\node_modules\\\\webpack\\\\lib\\\\index.js\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/build#build-001",
+    "args": {
+      "exposeModules": [
+        {
+          "name": "./Pedido",
+          "module": null,
+          "request": "./components/Pedido.js"
+        }
+      ],
+      "FEDERATION_WEBPACK_PATH": "C:\\Users\\User\\Documents\\Curso Ebac\\Projetos\\Sabore\\microfrontends-sabore\\micro-pedido\\node_modules\\webpack\\lib\\index.js"
+    },
+    "timestamp": 1792018165745
+  }
+}
