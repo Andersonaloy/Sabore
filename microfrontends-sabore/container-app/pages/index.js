@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import AplicacaoSabore from '../components/AplicacaoSaborê';
+import AplicacaoSabore from '../components/AplicacaoSabore';
 
 export default function Home() {
   return (
